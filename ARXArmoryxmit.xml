@@ -1,0 +1,130 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<Script file="ARXArmoryxmit.lua"/>
+
+<Frame name="ARXArmoryxmit" enableMouse="false" hidden="false" frameStrata="TOOLTIP">
+			<!-- do not parent="UIParent" so my frame remains while interface is hidden, and does not scale up/down with UI --> 
+	<Scripts>
+		<OnLoad>
+			ARXArmoryxmit_OnLoad(self)
+		</OnLoad>
+		<OnEvent>
+			ARXArmoryxmit_OnEvent(self, event, ...)
+		</OnEvent>
+	</Scripts>
+
+	<Frames>
+	
+		<Frame name="$parentBackground">
+			<Size x="25" y="1" />
+			<Layers>
+				<Layer level="BACKGROUND">
+					<Texture name="$parentBGTexture" file="Interface\AddOns\ARXArmoryxmit\background" setAllPoints="true" />
+				</Layer>
+			</Layers>
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="UIParent" >
+					<Offset x="0" y="-1" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+	
+		<Frame name="$parentL1" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="UIParent" >
+					<Offset x="0" y="-1" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentL2" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentL1" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		<Frame name="$parentA8" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentL2" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentA7" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentA8" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+
+		<Frame name="$parentA6" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentA7" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentA5" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentA6" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentA4" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentA5" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentA3" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentA4" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentA2" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentA3" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentA1" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentA2" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentR1" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentA1" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+		<Frame name="$parentR2" inherits="ARXArmoryxmitTemplate">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$parentR1" >
+					<Offset x="2" y="0" />
+				</Anchor>
+			</Anchors>
+		</Frame>
+		
+	</Frames>
+</Frame>
+</Ui>
