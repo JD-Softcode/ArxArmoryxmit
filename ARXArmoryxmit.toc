@@ -1,6 +1,6 @@
-## Interface: 80200
-## Title: ARXArmoryxmit v1.9.1
-## Version: 1.9.1
+## Interface: 80300
+## Title: ARXArmoryxmit v1.9.2
+## Version: 1.9.2
 ## Notes: Displays target's Armory page in your web browser and via Logitech G Arx Control.|nMust be paired with the |cFF00FFFFARX Armory|r application for Mac or PC.
 ## SavedVariables: ARXArmoryVerboseMode
 ## Author: waldokind@jdsoftcode.net
